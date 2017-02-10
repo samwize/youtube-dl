@@ -17,7 +17,7 @@ from ..utils import (
 
 class ToggleIE(InfoExtractor):
     IE_NAME = 'toggle'
-    _VALID_URL = r'https?://video\.toggle\.sg/(?:en|zh)/(?:series|clips|movies)/(?:[^/]+/)+(?P<id>[0-9]+)'
+    _VALID_URL = r'https?://video\.toggle\.sg/(?:en|zh)/(?:video/)?(?:series|clips|movies)/(?:[^/]+/)+(?P<id>[0-9]+)'
     _TESTS = [{
         'url': 'http://video.toggle.sg/en/series/lion-moms-tif/trailers/lion-moms-premier/343115',
         'info_dict': {
